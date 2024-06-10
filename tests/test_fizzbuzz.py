@@ -1,0 +1,19 @@
+from app.app import create_app
+from fizzbuzz import fizzbuzz
+
+flask_app = create_app()
+
+def test_fizz():
+    res = fizzbuzz(3)
+    assert res == 'fizz'
+
+def test_buzz():
+    res = fizzbuzz(5)
+    assert res == 'buzz'
+
+def test_fizzbuzz():
+    res = fizzbuzz(15)
+    assert res == 'fizzbuzz'
+
+
+
