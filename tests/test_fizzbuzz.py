@@ -1,5 +1,5 @@
 from app.app import create_app
-from fizzbuzz import fizzbuzz
+from app.fizzbuzz.fizzbuzz import fizzbuzz
 
 flask_app = create_app()
 
